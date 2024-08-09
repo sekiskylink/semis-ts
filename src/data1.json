@@ -1,0 +1,7 @@
+{
+    "headers": [
+        { "header": "ID", "key": "id", "width": 10 },
+        { "header": "Name", "key": "name", "width": 32 }
+    ]
+}
+

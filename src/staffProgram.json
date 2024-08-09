@@ -1,0 +1,1546 @@
+{
+  "access": {
+    "data": {
+      "read": true,
+      "write": true
+    },
+    "delete": true,
+    "externalize": true,
+    "manage": true,
+    "read": true,
+    "update": true,
+    "write": true
+  },
+  "displayName": "Staff",
+  "id": "rmuGQ7kBQBU",
+  "programStages": [
+    {
+      "autoGenerateEvent": false,
+      "displayName": "Attendance",
+      "id": "ErFJy0ODhrF",
+      "programStageDataElements": [
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Attendance",
+            "formName": "Attendance status",
+            "id": "d0MKWRNGv0a",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "Present",
+                  "value": "present"
+                },
+                {
+                  "label": "Late",
+                  "value": "late"
+                },
+                {
+                  "label": "Absent",
+                  "value": "absent"
+                }
+              ]
+            },
+            "valueType": "TEXT"
+          },
+          "displayInReports": true
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Reason of absence",
+            "formName": "Reason of absence",
+            "id": "oLUMMT84ILM",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "Sick",
+                  "value": "SICK"
+                },
+                {
+                  "label": "Other reason",
+                  "value": "OTHER REASON"
+                }
+              ]
+            },
+            "valueType": "TEXT"
+          },
+          "displayInReports": true
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "autoGenerateEvent": true,
+      "displayName": "Teacher Detail",
+      "id": "RyXzG49getI",
+      "programStageDataElements": [
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Is New Teacher",
+            "formName": "Is New Teacher",
+            "id": "UvndXMCkseN",
+            "valueType": "TRUE_ONLY"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Is Teaching",
+            "formName": "Is Teaching",
+            "id": "NHB0B07ehS4",
+            "valueType": "TRUE_ONLY"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Stays in Quarter",
+            "formName": "Stays in Quarter",
+            "id": "rUBHDUSRLCe",
+            "valueType": "TRUE_ONLY"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Actual Status",
+            "formName": "Actual Status",
+            "id": "m9VE4MTRbh7",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "HM – Head master",
+                  "value": "HM"
+                },
+                {
+                  "label": "DHM – Deputy head master",
+                  "value": "DHM"
+                },
+                {
+                  "label": "G3T- Grade III Teacher",
+                  "value": "G3T"
+                },
+                {
+                  "label": "SM – Senior master",
+                  "value": "SM"
+                },
+                {
+                  "label": "DP- Diploma ",
+                  "value": "DP"
+                },
+                {
+                  "label": "TT -  Trainee teacher",
+                  "value": "TT"
+                },
+                {
+                  "label": "BD- Bachelor's Degree and Above",
+                  "value": "BD"
+                },
+                {
+                  "label": "PTC -  Primary teacher certified",
+                  "value": "PTC"
+                },
+                {
+                  "label": "GV - Grade V (DSE, DTE, DSNE)",
+                  "value": "GV"
+                },
+                {
+                  "label": "HTC – Higher teacher certified",
+                  "value": "HTC"
+                },
+                {
+                  "label": "OQ - Other Qualifications",
+                  "value": "OQ"
+                },
+                {
+                  "label": "GT -  Graduate teacher",
+                  "value": "GT"
+                },
+                {
+                  "label": "QQT – Qualified Quranic teacher",
+                  "value": "QQT"
+                },
+                {
+                  "label": "UQQT – Unqualifed Quranic teacher",
+                  "value": "UQQT"
+                },
+                {
+                  "label": "CT -  Contract teacher",
+                  "value": "CT"
+                },
+                {
+                  "label": "UQT – Unqualified teacher",
+                  "value": "UQT"
+                }
+              ]
+            },
+            "valueType": "TEXT"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Designation/Role in the school",
+            "formName": "Designation/Role in the school",
+            "id": "cfoMqPHkQSs",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "Senior man ",
+                  "value": "Senior man "
+                },
+                {
+                  "label": "Senior woman",
+                  "value": "Senior woman"
+                },
+                {
+                  "label": "Counsellor ",
+                  "value": "Counsellor "
+                }
+              ]
+            },
+            "valueType": "TEXT"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Highest Education Level",
+            "formName": "Highest Education Level",
+            "id": "euhRQDi96Yz",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "None",
+                  "value": "none"
+                },
+                {
+                  "label": "LBE - Lower Basic",
+                  "value": "lower basic"
+                },
+                {
+                  "label": "UBE - Upper Basic",
+                  "value": "upper basic"
+                },
+                {
+                  "label": "SSE - Senior Secondary",
+                  "value": "senior secondary"
+                },
+                {
+                  "label": "C - Certificate",
+                  "value": "certificate"
+                },
+                {
+                  "label": "D - Diploma",
+                  "value": "diploma"
+                },
+                {
+                  "label": "B - Bachelor",
+                  "value": "bachelor"
+                },
+                {
+                  "label": "M - Masters",
+                  "value": "masters"
+                },
+                {
+                  "label": "P - PhD",
+                  "value": "phd"
+                }
+              ]
+            },
+            "valueType": "TEXT"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Principal Subject Taught",
+            "formName": "Principal Subject Taught",
+            "id": "tJdKszUl1Qj",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "English language",
+                  "value": "ENGL"
+                },
+                {
+                  "label": "Mathematics",
+                  "value": "MATH"
+                },
+                {
+                  "label": "Integrated Studies",
+                  "value": "INTS"
+                },
+                {
+                  "label": "Social and Environmental Studies",
+                  "value": "SOCENV"
+                },
+                {
+                  "label": "Science",
+                  "value": "SCI"
+                },
+                {
+                  "label": "All",
+                  "value": "All"
+                }
+              ]
+            },
+            "valueType": "TEXT"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Secondary Subject Taught",
+            "formName": "Secondary Subject Taught",
+            "id": "MoScAo6FvNo",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "English language",
+                  "value": "ENGL"
+                },
+                {
+                  "label": "Mathematics",
+                  "value": "MATH"
+                },
+                {
+                  "label": "Integrated Studies",
+                  "value": "INTS"
+                },
+                {
+                  "label": "Social and Environmental Studies",
+                  "value": "SOCENV"
+                },
+                {
+                  "label": "Science",
+                  "value": "SCI"
+                },
+                {
+                  "label": "All",
+                  "value": "All"
+                }
+              ]
+            },
+            "valueType": "TEXT"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Shift Taught",
+            "formName": "Shift Taught",
+            "id": "xy84YeL6pok",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "Morning",
+                  "value": "morning"
+                },
+                {
+                  "label": "Afternoon",
+                  "value": "afternoon"
+                },
+                {
+                  "label": "Double shift",
+                  "value": "double"
+                }
+              ]
+            },
+            "valueType": "TEXT"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "First Grade Taught",
+            "formName": "First Grade Taught",
+            "id": "KRTLyimTG3o",
+            "valueType": "TEXT"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Second Grade Taught",
+            "formName": "Second Grade Taught",
+            "id": "NKCCwrX7Jqq",
+            "valueType": "TEXT"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "More than 2 Grades Taught",
+            "formName": "More than 2 Grades Taught",
+            "id": "haPLy1iMg3a",
+            "valueType": "TRUE_ONLY"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Weekly Periods",
+            "formName": "Weekly Periods",
+            "id": "v1aLSzOvuni",
+            "valueType": "INTEGER_ZERO_OR_POSITIVE"
+          },
+          "displayInReports": false
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "autoGenerateEvent": false,
+      "displayName": "Registration",
+      "id": "bQxV9SA61IG",
+      "programStageDataElements": [
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Type of Staff",
+            "id": "EuzOMK1tTNv",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "Teaching Staff",
+                  "value": "Teaching Staff"
+                },
+                {
+                  "label": "Non-teaching staff",
+                  "value": "Non-teaching staff"
+                }
+              ]
+            },
+            "valueType": "INTEGER_ZERO_OR_POSITIVE"
+          },
+          "displayInReports": true
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Employment type",
+            "id": "gXBJIHjcwiH",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "Full Time",
+                  "value": "Full Time"
+                },
+                {
+                  "label": "Part time",
+                  "value": "Part time"
+                }
+              ]
+            },
+            "valueType": "INTEGER_ZERO_OR_POSITIVE"
+          },
+          "displayInReports": true
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Academic Year ",
+            "id": "iDSrFrrVgmX",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "2024",
+                  "value": "2024"
+                },
+                {
+                  "label": "2023",
+                  "value": "2023"
+                },
+                {
+                  "label": "2022",
+                  "value": "2022"
+                },
+                {
+                  "label": "2021",
+                  "value": "2021"
+                }
+              ]
+            },
+            "valueType": "TEXT"
+          },
+          "displayInReports": true
+        }
+      ],
+      "repeatable": true
+    },
+    {
+      "autoGenerateEvent": true,
+      "displayName": "Transfer",
+      "id": "G8S9o9DL3hI",
+      "programStageDataElements": [
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Reason for transfer_Package",
+            "id": "Wq87Fqgd420",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "Financial issues",
+                  "value": "Financial issues"
+                },
+                {
+                  "label": "Health problems",
+                  "value": "Health problems"
+                },
+                {
+                  "label": "Others",
+                  "value": "Others"
+                }
+              ]
+            },
+            "valueType": "TEXT"
+          },
+          "displayInReports": false
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Transfer status",
+            "id": "vpE9A9biU05",
+            "optionSet": {
+              "options": [
+                {
+                  "label": "Pending",
+                  "value": "Pending"
+                },
+                {
+                  "label": "Approved",
+                  "value": "Approved"
+                },
+                {
+                  "label": "Reproved",
+                  "value": "Reproved"
+                }
+              ]
+            },
+            "valueType": "TEXT"
+          },
+          "displayInReports": true
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Destiny School",
+            "id": "D8cYfexBFfG",
+            "valueType": "ORGANISATION_UNIT"
+          },
+          "displayInReports": true
+        },
+        {
+          "compulsory": false,
+          "dataElement": {
+            "displayName": "Origin School",
+            "id": "BxOhjC4qCFD",
+            "valueType": "ORGANISATION_UNIT"
+          },
+          "displayInReports": true
+        }
+      ],
+      "repeatable": true
+    }
+  ],
+  "programTrackedEntityAttributes": [
+    {
+      "displayInList": false,
+      "mandatory": false,
+      "searchable": false,
+      "trackedEntityAttribute": {
+        "displayName": "Employment number",
+        "formName": "Employment number",
+        "generated": false,
+        "id": "jajr3chSFrk",
+        "pattern": "",
+        "unique": true,
+        "valueType": "TEXT"
+      }
+    },
+    {
+      "displayInList": false,
+      "mandatory": false,
+      "searchable": false,
+      "trackedEntityAttribute": {
+        "displayName": "Order Teacher in School",
+        "formName": "Order Teacher in School",
+        "generated": false,
+        "id": "cjukPm8YWsw",
+        "pattern": "",
+        "unique": false,
+        "valueType": "TEXT"
+      }
+    },
+    {
+      "displayInList": false,
+      "mandatory": false,
+      "searchable": false,
+      "trackedEntityAttribute": {
+        "displayName": "Payroll Number",
+        "formName": "Payroll Number",
+        "generated": false,
+        "id": "D6L1VVkEmid",
+        "pattern": "",
+        "unique": false,
+        "valueType": "TEXT"
+      }
+    },
+    {
+      "displayInList": false,
+      "mandatory": false,
+      "searchable": false,
+      "trackedEntityAttribute": {
+        "displayName": "Tin Number",
+        "formName": "Tin Number",
+        "generated": false,
+        "id": "urb485X5Yu0",
+        "pattern": "",
+        "unique": false,
+        "valueType": "TEXT"
+      }
+    },
+    {
+      "displayInList": true,
+      "mandatory": false,
+      "searchable": true,
+      "trackedEntityAttribute": {
+        "displayName": "First name",
+        "formName": "First name",
+        "generated": false,
+        "id": "gz8w04YBSS0",
+        "pattern": "",
+        "unique": false,
+        "valueType": "TEXT"
+      }
+    },
+    {
+      "displayInList": true,
+      "mandatory": false,
+      "searchable": true,
+      "trackedEntityAttribute": {
+        "displayName": "Surname",
+        "formName": "Surname",
+        "generated": false,
+        "id": "ZIDlK6BaAU2",
+        "pattern": "",
+        "unique": false,
+        "valueType": "TEXT"
+      }
+    },
+    {
+      "displayInList": false,
+      "mandatory": false,
+      "searchable": false,
+      "trackedEntityAttribute": {
+        "displayName": "Gender ",
+        "formName": "Gender",
+        "generated": false,
+        "id": "X0vzx18XWqu",
+        "optionSet": {
+          "options": [
+            {
+              "label": "Female",
+              "value": "female"
+            },
+            {
+              "label": "Male",
+              "value": "male"
+            }
+          ]
+        },
+        "pattern": "",
+        "unique": false,
+        "valueType": "TEXT"
+      }
+    },
+    {
+      "displayInList": false,
+      "mandatory": false,
+      "searchable": false,
+      "trackedEntityAttribute": {
+        "displayName": "Mobile Number",
+        "formName": "Mobile Number",
+        "generated": false,
+        "id": "YnHuqCmuydE",
+        "pattern": "",
+        "unique": false,
+        "valueType": "PHONE_NUMBER"
+      }
+    },
+    {
+      "displayInList": false,
+      "mandatory": false,
+      "searchable": false,
+      "trackedEntityAttribute": {
+        "displayName": "Date of birth",
+        "formName": "Date of birth",
+        "generated": false,
+        "id": "EPYqXuM0M2u",
+        "pattern": "",
+        "unique": false,
+        "valueType": "DATE"
+      }
+    },
+    {
+      "displayInList": false,
+      "mandatory": false,
+      "searchable": false,
+      "trackedEntityAttribute": {
+        "displayName": "Date of Teacher Employment ",
+        "formName": "Date of Teacher Employment ",
+        "generated": false,
+        "id": "LgPJqgVrJ1I",
+        "pattern": "",
+        "unique": false,
+        "valueType": "DATE"
+      }
+    },
+    {
+      "displayInList": false,
+      "mandatory": false,
+      "searchable": false,
+      "trackedEntityAttribute": {
+        "displayName": "Date of Transfer to Current School",
+        "formName": "Date of Transfer to Current School",
+        "generated": false,
+        "id": "eJyKxIxfwAJ",
+        "pattern": "",
+        "unique": false,
+        "valueType": "DATE"
+      }
+    },
+    {
+      "displayInList": false,
+      "mandatory": false,
+      "searchable": false,
+      "trackedEntityAttribute": {
+        "displayName": "Nationality",
+        "formName": "Nationality",
+        "generated": false,
+        "id": "wGiRDfHT0hj",
+        "optionSet": {
+          "options": [
+            {
+              "label": "Afghan",
+              "value": "afghan"
+            },
+            {
+              "label": "Albanian",
+              "value": "albanian"
+            },
+            {
+              "label": "Algerian",
+              "value": "algerian"
+            },
+            {
+              "label": "American",
+              "value": "american"
+            },
+            {
+              "label": "Andorran",
+              "value": "andorran"
+            },
+            {
+              "label": "Angolan",
+              "value": "angolan"
+            },
+            {
+              "label": "Antiguans",
+              "value": "antiguans"
+            },
+            {
+              "label": "Argentinean",
+              "value": "argentinean"
+            },
+            {
+              "label": "Armenian",
+              "value": "armenian"
+            },
+            {
+              "label": "Australian",
+              "value": "australian"
+            },
+            {
+              "label": "Austrian",
+              "value": "austrian"
+            },
+            {
+              "label": "Azerbaijani",
+              "value": "azerbaijani"
+            },
+            {
+              "label": "Bahamian",
+              "value": "bahamian"
+            },
+            {
+              "label": "Bahraini",
+              "value": "bahraini"
+            },
+            {
+              "label": "Bangladeshi",
+              "value": "bangladeshi"
+            },
+            {
+              "label": "Barbadian",
+              "value": "barbadian"
+            },
+            {
+              "label": "Barbudans",
+              "value": "barbudans"
+            },
+            {
+              "label": "Batswana",
+              "value": "batswana"
+            },
+            {
+              "label": "Belarusian",
+              "value": "belarusian"
+            },
+            {
+              "label": "Belgian",
+              "value": "belgian"
+            },
+            {
+              "label": "Belizean",
+              "value": "belizean"
+            },
+            {
+              "label": "Beninese",
+              "value": "beninese"
+            },
+            {
+              "label": "Bhutanese",
+              "value": "bhutanese"
+            },
+            {
+              "label": "Bolivian",
+              "value": "bolivian"
+            },
+            {
+              "label": "Bosnian",
+              "value": "bosnian"
+            },
+            {
+              "label": "Brazilian",
+              "value": "brazilian"
+            },
+            {
+              "label": "British",
+              "value": "british"
+            },
+            {
+              "label": "Bruneian",
+              "value": "bruneian"
+            },
+            {
+              "label": "Bulgarian",
+              "value": "bulgarian"
+            },
+            {
+              "label": "Burkinabe",
+              "value": "burkinabe"
+            },
+            {
+              "label": "Burmese",
+              "value": "burmese"
+            },
+            {
+              "label": "Burundian",
+              "value": "burundian"
+            },
+            {
+              "label": "Cambodian",
+              "value": "cambodian"
+            },
+            {
+              "label": "Cameroonian",
+              "value": "cameroonian"
+            },
+            {
+              "label": "Canadian",
+              "value": "canadian"
+            },
+            {
+              "label": "Cape Verdean",
+              "value": "cape verdean"
+            },
+            {
+              "label": "Central African",
+              "value": "central african"
+            },
+            {
+              "label": "Chadian",
+              "value": "chadian"
+            },
+            {
+              "label": "Chilean",
+              "value": "chilean"
+            },
+            {
+              "label": "Chinese",
+              "value": "chinese"
+            },
+            {
+              "label": "Colombian",
+              "value": "colombian"
+            },
+            {
+              "label": "Comoran",
+              "value": "comoran"
+            },
+            {
+              "label": "Congolese",
+              "value": "congolese"
+            },
+            {
+              "label": "Costa Rican",
+              "value": "costa rican"
+            },
+            {
+              "label": "Croatian",
+              "value": "croatian"
+            },
+            {
+              "label": "Cuban",
+              "value": "cuban"
+            },
+            {
+              "label": "Cypriot",
+              "value": "cypriot"
+            },
+            {
+              "label": "Czech",
+              "value": "czech"
+            },
+            {
+              "label": "Danish",
+              "value": "danish"
+            },
+            {
+              "label": "Djibouti",
+              "value": "djibouti"
+            },
+            {
+              "label": "Dominican",
+              "value": "dominican"
+            },
+            {
+              "label": "Dutch",
+              "value": "dutch"
+            },
+            {
+              "label": "East Timorese",
+              "value": "east timorese"
+            },
+            {
+              "label": "Ecuadorean",
+              "value": "ecuadorean"
+            },
+            {
+              "label": "Egyptian",
+              "value": "egyptian"
+            },
+            {
+              "label": "Emirian",
+              "value": "emirian"
+            },
+            {
+              "label": "Equatorial Guinean",
+              "value": "equatorial guinean"
+            },
+            {
+              "label": "Eritrean",
+              "value": "eritrean"
+            },
+            {
+              "label": "Estonian",
+              "value": "estonian"
+            },
+            {
+              "label": "Ethiopian",
+              "value": "ethiopian"
+            },
+            {
+              "label": "Fijian",
+              "value": "fijian"
+            },
+            {
+              "label": "Filipino",
+              "value": "filipino"
+            },
+            {
+              "label": "Finnish",
+              "value": "finnish"
+            },
+            {
+              "label": "French",
+              "value": "french"
+            },
+            {
+              "label": "Gabonese",
+              "value": "gabonese"
+            },
+            {
+              "label": "Gambian",
+              "value": "gambian"
+            },
+            {
+              "label": "Georgian",
+              "value": "georgian"
+            },
+            {
+              "label": "German",
+              "value": "german"
+            },
+            {
+              "label": "Ghanaian",
+              "value": "ghanaian"
+            },
+            {
+              "label": "Greek",
+              "value": "greek"
+            },
+            {
+              "label": "Grenadian",
+              "value": "grenadian"
+            },
+            {
+              "label": "Guatemalan",
+              "value": "guatemalan"
+            },
+            {
+              "label": "Guinea-Bissauan",
+              "value": "guinea-bissauan"
+            },
+            {
+              "label": "Guinean",
+              "value": "guinean"
+            },
+            {
+              "label": "Guyanese",
+              "value": "guyanese"
+            },
+            {
+              "label": "Haitian",
+              "value": "haitian"
+            },
+            {
+              "label": "Herzegovinian",
+              "value": "herzegovinian"
+            },
+            {
+              "label": "Honduran",
+              "value": "honduran"
+            },
+            {
+              "label": "Hungarian",
+              "value": "hungarian"
+            },
+            {
+              "label": "I-Kiribati",
+              "value": "i-kiribati"
+            },
+            {
+              "label": "Icelander",
+              "value": "icelander"
+            },
+            {
+              "label": "Indian",
+              "value": "indian"
+            },
+            {
+              "label": "Indonesian",
+              "value": "indonesian"
+            },
+            {
+              "label": "Iranian",
+              "value": "iranian"
+            },
+            {
+              "label": "Iraqi",
+              "value": "iraqi"
+            },
+            {
+              "label": "Irish",
+              "value": "irish"
+            },
+            {
+              "label": "Israeli",
+              "value": "israeli"
+            },
+            {
+              "label": "Italian",
+              "value": "italian"
+            },
+            {
+              "label": "Ivorian",
+              "value": "ivorian"
+            },
+            {
+              "label": "Jamaican",
+              "value": "jamaican"
+            },
+            {
+              "label": "Japanese",
+              "value": "japanese"
+            },
+            {
+              "label": "Jordanian",
+              "value": "jordanian"
+            },
+            {
+              "label": "Kazakhstani",
+              "value": "kazakhstani"
+            },
+            {
+              "label": "Kenyan",
+              "value": "kenyan"
+            },
+            {
+              "label": "Kittian and Nevisian",
+              "value": "kittian and nevisian"
+            },
+            {
+              "label": "Kuwaiti",
+              "value": "kuwaiti"
+            },
+            {
+              "label": "Kyrgyz",
+              "value": "kyrgyz"
+            },
+            {
+              "label": "Laotian",
+              "value": "laotian"
+            },
+            {
+              "label": "Latvian",
+              "value": "latvian"
+            },
+            {
+              "label": "Lebanese",
+              "value": "lebanese"
+            },
+            {
+              "label": "Liberian",
+              "value": "liberian"
+            },
+            {
+              "label": "Libyan",
+              "value": "libyan"
+            },
+            {
+              "label": "Liechtensteiner",
+              "value": "liechtensteiner"
+            },
+            {
+              "label": "Lithuanian",
+              "value": "lithuanian"
+            },
+            {
+              "label": "Luxembourger",
+              "value": "luxembourger"
+            },
+            {
+              "label": "Macedonian",
+              "value": "macedonian"
+            },
+            {
+              "label": "Malagasy",
+              "value": "malagasy"
+            },
+            {
+              "label": "Malawian",
+              "value": "malawian"
+            },
+            {
+              "label": "Malaysian",
+              "value": "malaysian"
+            },
+            {
+              "label": "Maldivian",
+              "value": "maldivian"
+            },
+            {
+              "label": "Malian",
+              "value": "malian"
+            },
+            {
+              "label": "Maltese",
+              "value": "maltese"
+            },
+            {
+              "label": "Marshallese",
+              "value": "marshallese"
+            },
+            {
+              "label": "Mauritanian",
+              "value": "mauritanian"
+            },
+            {
+              "label": "Mauritian",
+              "value": "mauritian"
+            },
+            {
+              "label": "Mexican",
+              "value": "mexican"
+            },
+            {
+              "label": "Micronesian",
+              "value": "micronesian"
+            },
+            {
+              "label": "Moldovan",
+              "value": "moldovan"
+            },
+            {
+              "label": "Monacan",
+              "value": "monacan"
+            },
+            {
+              "label": "Mongolian",
+              "value": "mongolian"
+            },
+            {
+              "label": "Moroccan",
+              "value": "moroccan"
+            },
+            {
+              "label": "Mosotho",
+              "value": "mosotho"
+            },
+            {
+              "label": "Motswana",
+              "value": "motswana"
+            },
+            {
+              "label": "Mozambican",
+              "value": "mozambican"
+            },
+            {
+              "label": "Namibian",
+              "value": "namibian"
+            },
+            {
+              "label": "Nauruan",
+              "value": "nauruan"
+            },
+            {
+              "label": "Nepalese",
+              "value": "nepalese"
+            },
+            {
+              "label": "New Zealander",
+              "value": "new zealander"
+            },
+            {
+              "label": "Ni-Vanuatu",
+              "value": "ni-vanuatu"
+            },
+            {
+              "label": "Nicaraguan",
+              "value": "nicaraguan"
+            },
+            {
+              "label": "Nigerian",
+              "value": "nigerian"
+            },
+            {
+              "label": "Nigerien",
+              "value": "nigerien"
+            },
+            {
+              "label": "North Korean",
+              "value": "north korean"
+            },
+            {
+              "label": "Northern Irish",
+              "value": "northern irish"
+            },
+            {
+              "label": "Norwegian",
+              "value": "norwegian"
+            },
+            {
+              "label": "Omani",
+              "value": "omani"
+            },
+            {
+              "label": "Pakistani",
+              "value": "pakistani"
+            },
+            {
+              "label": "Palauan",
+              "value": "palauan"
+            },
+            {
+              "label": "Panamanian",
+              "value": "panamanian"
+            },
+            {
+              "label": "Papua New Guinean",
+              "value": "papua new guinean"
+            },
+            {
+              "label": "Paraguayan",
+              "value": "paraguayan"
+            },
+            {
+              "label": "Peruvian",
+              "value": "peruvian"
+            },
+            {
+              "label": "Polish",
+              "value": "polish"
+            },
+            {
+              "label": "Portuguese",
+              "value": "portuguese"
+            },
+            {
+              "label": "Qatari",
+              "value": "qatari"
+            },
+            {
+              "label": "Romanian",
+              "value": "romanian"
+            },
+            {
+              "label": "Russian",
+              "value": "russian"
+            },
+            {
+              "label": "Rwandan",
+              "value": "rwandan"
+            },
+            {
+              "label": "Saint Lucian",
+              "value": "saint lucian"
+            },
+            {
+              "label": "Salvadoran",
+              "value": "salvadoran"
+            },
+            {
+              "label": "Samoan",
+              "value": "samoan"
+            },
+            {
+              "label": "San Marinese",
+              "value": "san marinese"
+            },
+            {
+              "label": "Sao Tomean",
+              "value": "sao tomean"
+            },
+            {
+              "label": "Saudi",
+              "value": "saudi"
+            },
+            {
+              "label": "Scottish",
+              "value": "scottish"
+            },
+            {
+              "label": "Senegalese",
+              "value": "senegalese"
+            },
+            {
+              "label": "Serbian",
+              "value": "serbian"
+            },
+            {
+              "label": "Seychellois",
+              "value": "seychellois"
+            },
+            {
+              "label": "Sierra Leonean",
+              "value": "sierra leonean"
+            },
+            {
+              "label": "Singaporean",
+              "value": "singaporean"
+            },
+            {
+              "label": "Slovakian",
+              "value": "slovakian"
+            },
+            {
+              "label": "Slovenian",
+              "value": "slovenian"
+            },
+            {
+              "label": "Solomon Islander",
+              "value": "solomon islander"
+            },
+            {
+              "label": "Somali",
+              "value": "somali"
+            },
+            {
+              "label": "South African",
+              "value": "south african"
+            },
+            {
+              "label": "South Korean",
+              "value": "south korean"
+            },
+            {
+              "label": "Spanish",
+              "value": "spanish"
+            },
+            {
+              "label": "Sri Lankan",
+              "value": "sri lankan"
+            },
+            {
+              "label": "Sudanese",
+              "value": "sudanese"
+            },
+            {
+              "label": "Surinamer",
+              "value": "surinamer"
+            },
+            {
+              "label": "Swazi",
+              "value": "swazi"
+            },
+            {
+              "label": "Swedish",
+              "value": "swedish"
+            },
+            {
+              "label": "Swiss",
+              "value": "swiss"
+            },
+            {
+              "label": "Syrian",
+              "value": "syrian"
+            },
+            {
+              "label": "Taiwanese",
+              "value": "taiwanese"
+            },
+            {
+              "label": "Tajik",
+              "value": "tajik"
+            },
+            {
+              "label": "Tanzanian",
+              "value": "tanzanian"
+            },
+            {
+              "label": "Thai",
+              "value": "thai"
+            },
+            {
+              "label": "Togolese",
+              "value": "togolese"
+            },
+            {
+              "label": "Tongan",
+              "value": "tongan"
+            },
+            {
+              "label": "Trinidadian or Tobagonian",
+              "value": "trinidadian or tobagonian"
+            },
+            {
+              "label": "Tunisian",
+              "value": "tunisian"
+            },
+            {
+              "label": "Turkish",
+              "value": "turkish"
+            },
+            {
+              "label": "Tuvaluan",
+              "value": "tuvaluan"
+            },
+            {
+              "label": "Ugandan",
+              "value": "ugandan"
+            },
+            {
+              "label": "Ukrainian",
+              "value": "ukrainian"
+            },
+            {
+              "label": "Uruguayan",
+              "value": "uruguayan"
+            },
+            {
+              "label": "Uzbekistani",
+              "value": "uzbekistani"
+            },
+            {
+              "label": "Venezuelan",
+              "value": "venezuelan"
+            },
+            {
+              "label": "Vietnamese",
+              "value": "vietnamese"
+            },
+            {
+              "label": "Welsh",
+              "value": "welsh"
+            },
+            {
+              "label": "Yemenite",
+              "value": "yemenite"
+            },
+            {
+              "label": "Zambian",
+              "value": "zambian"
+            },
+            {
+              "label": "Zimbabwean",
+              "value": "zimbabwean"
+            },
+            {
+              "label": "0 - Others",
+              "value": "0 - Others"
+            }
+          ]
+        },
+        "pattern": "",
+        "unique": false,
+        "valueType": "TEXT"
+      }
+    }
+  ],
+  "programType": "WITH_REGISTRATION",
+  "trackedEntityType": {
+    "id": "EmSCvAyT8T0",
+    "trackedEntityTypeAttributes": [
+      {
+        "trackedEntityAttribute": {
+          "id": "gz8w04YBSS0"
+        }
+      },
+      {
+        "trackedEntityAttribute": {
+          "id": "ZIDlK6BaAU2"
+        }
+      }
+    ]
+  },
+  "version": 26
+}
